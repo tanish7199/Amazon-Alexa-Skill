@@ -99,14 +99,14 @@ const speechConsWrong = ["Argh", "Aw man", "Blarg", "Blast", "Boo", "Bummer", "D
 
 // This is the welcome message for when a user starts the skill without a 
 // specific intent.
-const WELCOME_MESSAGE = "Welcome to the United States Quiz Game!  You can ask me about any of the fifty states and their capitals, or you can ask me to start a quiz.  What would you like to do?";
+const WELCOME_MESSAGE = "Welcome to the India Quiz Game!  You can ask me about any of the fifty states and their capitals, or you can ask me to start a quiz.  What would you like to do?";
 
 // This is the message a user will hear when they start a quiz.
-const START_QUIZ_MESSAGE = "OK.  I will ask you 10 questions about the United States.";
+const START_QUIZ_MESSAGE = "OK.  I will ask you 10 questions about the India.";
 
 // This is the message a user will hear when they try to cancel or stop the 
 // skill, or when they finish a quiz.
-const EXIT_SKILL_MESSAGE = "Thank you for playing the United States Quiz Game!  Let's play again soon!";
+const EXIT_SKILL_MESSAGE = "Thank you for playing India Quiz Game!  Let's play again soon!";
 
 // This is the message a user will hear after they ask (and hear) about a 
 // specific data element.
@@ -114,7 +114,7 @@ const REPROMPT_SPEECH = "Which other state or capital would you like to know abo
 
 // This is the message a user will hear when they ask Alexa for help in your 
 // skill.
-const HELP_MESSAGE = "I know lots of things about the United States.  You can ask me about a state or a capital, and I'll tell you what I know.  You can also test your knowledge by asking me to start a quiz.  What would you like to do?";
+const HELP_MESSAGE = "I know lots of things about India.  You can ask me about a state or a capital, and I'll tell you what I know.  You can also test your knowledge by asking me to start a quiz.  What would you like to do?";
 
 
 //This is the response a user will receive when they ask about something we 
@@ -178,56 +178,35 @@ function getBackgroundImage(label, height = 1024, width = 600) {
 //TODO: Replace this data with your own.
 //=========================================================================================================================================
 const data = [
-                {StateName: "Andhra Pradesh",        Abbreviation: "AP", Capital: "Montgomery",     StatehoodYear: 1819, StatehoodOrder: 22 },
-                {StateName: "Alaska",         Abbreviation: "AK", Capital: "Juneau",         StatehoodYear: 1959, StatehoodOrder: 49 },
-                {StateName: "Arizona",        Abbreviation: "AZ", Capital: "Phoenix",        StatehoodYear: 1912, StatehoodOrder: 48 },
-                {StateName: "Arkansas",       Abbreviation: "AR", Capital: "Little Rock",    StatehoodYear: 1836, StatehoodOrder: 25 },
-                {StateName: "California",     Abbreviation: "CA", Capital: "Sacramento",     StatehoodYear: 1850, StatehoodOrder: 31 },
-                {StateName: "Colorado",       Abbreviation: "CO", Capital: "Denver",         StatehoodYear: 1876, StatehoodOrder: 38 },
-                {StateName: "Connecticut",    Abbreviation: "CT", Capital: "Hartford",       StatehoodYear: 1788, StatehoodOrder: 5 },
-                {StateName: "Delaware",       Abbreviation: "DE", Capital: "Dover",          StatehoodYear: 1787, StatehoodOrder: 1 },
-                {StateName: "Florida",        Abbreviation: "FL", Capital: "Tallahassee",    StatehoodYear: 1845, StatehoodOrder: 27 },
-                {StateName: "Georgia",        Abbreviation: "GA", Capital: "Atlanta",        StatehoodYear: 1788, StatehoodOrder: 4 },
-                {StateName: "Hawaii",         Abbreviation: "HI", Capital: "Honolulu",       StatehoodYear: 1959, StatehoodOrder: 50 },
-                {StateName: "Idaho",          Abbreviation: "ID", Capital: "Boise",          StatehoodYear: 1890, StatehoodOrder: 43 },
-                {StateName: "Illinois",       Abbreviation: "IL", Capital: "Springfield",    StatehoodYear: 1818, StatehoodOrder: 21 },
-                {StateName: "Indiana",        Abbreviation: "IN", Capital: "Indianapolis",   StatehoodYear: 1816, StatehoodOrder: 19 },
-                {StateName: "Iowa",           Abbreviation: "IA", Capital: "Des Moines",     StatehoodYear: 1846, StatehoodOrder: 29 },
-                {StateName: "Kansas",         Abbreviation: "KS", Capital: "Topeka",         StatehoodYear: 1861, StatehoodOrder: 34 },
-                {StateName: "Kentucky",       Abbreviation: "KY", Capital: "Frankfort",      StatehoodYear: 1792, StatehoodOrder: 15 },
-                {StateName: "Louisiana",      Abbreviation: "LA", Capital: "Baton Rouge",    StatehoodYear: 1812, StatehoodOrder: 18 },
-                {StateName: "Maine",          Abbreviation: "ME", Capital: "Augusta",        StatehoodYear: 1820, StatehoodOrder: 23 },
-                {StateName: "Maryland",       Abbreviation: "MD", Capital: "Annapolis",      StatehoodYear: 1788, StatehoodOrder: 7 },
-                {StateName: "Massachusetts",  Abbreviation: "MA", Capital: "Boston",         StatehoodYear: 1788, StatehoodOrder: 6 },
-                {StateName: "Michigan",       Abbreviation: "MI", Capital: "Lansing",        StatehoodYear: 1837, StatehoodOrder: 26 },
-                {StateName: "Minnesota",      Abbreviation: "MN", Capital: "St. Paul",       StatehoodYear: 1858, StatehoodOrder: 32 },
-                {StateName: "Mississippi",    Abbreviation: "MS", Capital: "Jackson",        StatehoodYear: 1817, StatehoodOrder: 20 },
-                {StateName: "Missouri",       Abbreviation: "MO", Capital: "Jefferson City", StatehoodYear: 1821, StatehoodOrder: 24 },
-                {StateName: "Montana",        Abbreviation: "MT", Capital: "Helena",         StatehoodYear: 1889, StatehoodOrder: 41 },
-                {StateName: "Nebraska",       Abbreviation: "NE", Capital: "Lincoln",        StatehoodYear: 1867, StatehoodOrder: 37 },
-                {StateName: "Nevada",         Abbreviation: "NV", Capital: "Carson City",    StatehoodYear: 1864, StatehoodOrder: 36 },
-                {StateName: "New Hampshire",  Abbreviation: "NH", Capital: "Concord",        StatehoodYear: 1788, StatehoodOrder: 9 },
-                {StateName: "New Jersey",     Abbreviation: "NJ", Capital: "Trenton",        StatehoodYear: 1787, StatehoodOrder: 3 },
-                {StateName: "New Mexico",     Abbreviation: "NM", Capital: "Santa Fe",       StatehoodYear: 1912, StatehoodOrder: 47 },
-                {StateName: "New York",       Abbreviation: "NY", Capital: "Albany",         StatehoodYear: 1788, StatehoodOrder: 11 },
-                {StateName: "North Carolina", Abbreviation: "NC", Capital: "Raleigh",        StatehoodYear: 1789, StatehoodOrder: 12 },
-                {StateName: "North Dakota",   Abbreviation: "ND", Capital: "Bismarck",       StatehoodYear: 1889, StatehoodOrder: 39 },
-                {StateName: "Ohio",           Abbreviation: "OH", Capital: "Columbus",       StatehoodYear: 1803, StatehoodOrder: 17 },
-                {StateName: "Oklahoma",       Abbreviation: "OK", Capital: "Oklahoma City",  StatehoodYear: 1907, StatehoodOrder: 46 },
-                {StateName: "Oregon",         Abbreviation: "OR", Capital: "Salem",          StatehoodYear: 1859, StatehoodOrder: 33 },
-                {StateName: "Pennsylvania",   Abbreviation: "PA", Capital: "Harrisburg",     StatehoodYear: 1787, StatehoodOrder: 2 },
-                {StateName: "Rhode Island",   Abbreviation: "RI", Capital: "Providence",     StatehoodYear: 1790, StatehoodOrder: 13 },
-                {StateName: "South Carolina", Abbreviation: "SC", Capital: "Columbia",       StatehoodYear: 1788, StatehoodOrder: 8 },
-                {StateName: "South Dakota",   Abbreviation: "SD", Capital: "Pierre",         StatehoodYear: 1889, StatehoodOrder: 40 },
-                {StateName: "Tennessee",      Abbreviation: "TN", Capital: "Nashville",      StatehoodYear: 1796, StatehoodOrder: 16 },
-                {StateName: "Texas",          Abbreviation: "TX", Capital: "Austin",         StatehoodYear: 1845, StatehoodOrder: 28 },
-                {StateName: "Utah",           Abbreviation: "UT", Capital: "Salt Lake City", StatehoodYear: 1896, StatehoodOrder: 45 },
-                {StateName: "Vermont",        Abbreviation: "VT", Capital: "Montpelier",     StatehoodYear: 1791, StatehoodOrder: 14 },
-                {StateName: "Virginia",       Abbreviation: "VA", Capital: "Richmond",       StatehoodYear: 1788, StatehoodOrder: 10 },
-                {StateName: "Washington",     Abbreviation: "WA", Capital: "Olympia",        StatehoodYear: 1889, StatehoodOrder: 42 },
-                {StateName: "West Virginia",  Abbreviation: "WV", Capital: "Charleston",     StatehoodYear: 1863, StatehoodOrder: 35 },
-                {StateName: "Wisconsin",      Abbreviation: "WI", Capital: "Madison",        StatehoodYear: 1848, StatehoodOrder: 30 },
-                {StateName: "Wyoming",        Abbreviation: "WY", Capital: "Cheyenne",       StatehoodYear: 1890, StatehoodOrder: 44 }
+                {StateName: "Uttar Pradesh",        Abbreviation: "AL", Capital: "Lucknow",     StatehoodYear: 1919, StatehoodOrder: 22 },
+                {StateName: "Punjab",         Abbreviation: "AK", Capital: "Chandigarh",         StatehoodYear: 1959, StatehoodOrder: 49 },
+                {StateName: "Uttarakhand",        Abbreviation: "AZ", Capital: "Dehradun",        StatehoodYear: 1912, StatehoodOrder: 48 },
+                {StateName: "Madhya Pradesh",       Abbreviation: "AR", Capital: "Bhopal",    StatehoodYear: 1936, StatehoodOrder: 25 },
+                {StateName: "Maharashtra",     Abbreviation: "CA", Capital: "Mumbai",     StatehoodYear: 1950, StatehoodOrder: 31 },
+                {StateName: "Tamil Nadu",       Abbreviation: "CO", Capital: "Chennao",         StatehoodYear: 1976, StatehoodOrder: 38 },
+                {StateName: "Kerala",    Abbreviation: "CT", Capital: "Thiruvananthapuram",       StatehoodYear: 1988, StatehoodOrder: 5 },
+                {StateName: "Rajasthan",       Abbreviation: "DE", Capital: "Jaipur",          StatehoodYear: 1987, StatehoodOrder: 1 },
+                {StateName: "Gujarat",        Abbreviation: "FL", Capital: "Gandhinagar",    StatehoodYear: 1945, StatehoodOrder: 27 },
+                {StateName: "Jharkhand",        Abbreviation: "GA", Capital: "Ranchi",        StatehoodYear: 1988, StatehoodOrder: 4 },
+                {StateName: "Sikkim",         Abbreviation: "HI", Capital: "Gangtok",       StatehoodYear: 1959, StatehoodOrder: 50 },
+                {StateName: "Arunachal Pradesh",          Abbreviation: "ID", Capital: "Itanagar",          StatehoodYear: 1890, StatehoodOrder: 43 },
+                {StateName: "Bihar",       Abbreviation: "IL", Capital: "Patna",    StatehoodYear: 1918, StatehoodOrder: 21 },
+                {StateName: "Assam",        Abbreviation: "IN", Capital: "Guwahati",   StatehoodYear: 1916, StatehoodOrder: 19 },
+                {StateName: "Chandigarh",           Abbreviation: "IA", Capital: "Chandigarh",     StatehoodYear: 1946, StatehoodOrder: 29 },
+                {StateName: "Chattisgarh",         Abbreviation: "KS", Capital: "Raipur",         StatehoodYear: 1961, StatehoodOrder: 34 },
+                {StateName: "Delhi",       Abbreviation: "KY", Capital: "Delhi",      StatehoodYear: 1992, StatehoodOrder: 15 },
+                {StateName: "Goa",      Abbreviation: "LA", Capital: "Panaji",    StatehoodYear: 1912, StatehoodOrder: 18 },
+                {StateName: "Himachal Pradesh",          Abbreviation: "ME", Capital: "Shimla",        StatehoodYear: 1920, StatehoodOrder: 23 },
+                {StateName: "Jammu and Kashmir",       Abbreviation: "MD", Capital: "Srinagar",      StatehoodYear: 1988, StatehoodOrder: 7 },
+                {StateName: "Karnataka",  Abbreviation: "MA", Capital: "Bengaluru",         StatehoodYear: 1988, StatehoodOrder: 6 },
+                {StateName: "Lakshdweep",       Abbreviation: "MI", Capital: "Port Blair",        StatehoodYear: 1937, StatehoodOrder: 26 },
+                {StateName: "Manipur",      Abbreviation: "MN", Capital: "Imphal",       StatehoodYear: 1958, StatehoodOrder: 32 },
+                {StateName: "Meghalaya",    Abbreviation: "MS", Capital: "Shillong",        StatehoodYear: 1917, StatehoodOrder: 20 },
+                {StateName: "Mizoram",       Abbreviation: "MO", Capital: "Aizawl", StatehoodYear: 1921, StatehoodOrder: 24 },
+                {StateName: "Nagaland",        Abbreviation: "MT", Capital: "Kohima",         StatehoodYear: 1989, StatehoodOrder: 41 },
+                {StateName: "Odisha",       Abbreviation: "NE", Capital: "Bhubaneshwar",        StatehoodYear: 1967, StatehoodOrder: 37 },
+                {StateName: "Tripura",         Abbreviation: "NV", Capital: "Agartala",    StatehoodYear: 1964, StatehoodOrder: 36 },
+                {StateName: "West Bengal",  Abbreviation: "NH", Capital: "Kolkata",        StatehoodYear: 1988, StatehoodOrder: 9 },
             ];
 
 //=========================================================================================================================================
